@@ -1,0 +1,4 @@
+python BERTAttack/bertattack.py --output_dir data_attack/imdb_train0.tsv --start 0 --data_path data_attack/imdb/train.tsv --mlm_path bert-base-uncased --tgt_path outputs/imdbclassifier/ --num_label 2 --k 48
+python BERTAttack/bertattack.py --output_dir data_attack/imdb_train5000.tsv --start 5000 --data_path data_attack/imdb/train.tsv --mlm_path bert-base-uncased --tgt_path outputs/imdbclassifier/ --num_label 2 --k 48
+python BERTAttack/bertattack.py --output_dir data_attack/imdb_train10000.tsv --start 10000 --data_path data_attack/imdb/train.tsv --mlm_path bert-base-uncased --tgt_path outputs/imdbclassifier/ --num_label 2 --k 48
+python BERTAttack/bertattack.py --output_dir data_attack/imdb_train15000.tsv --start 15000 --data_path data_attack/imdb/train.tsv --mlm_path bert-base-uncased --tgt_path outputs/imdbclassifier/ --num_label 2 --k 48
