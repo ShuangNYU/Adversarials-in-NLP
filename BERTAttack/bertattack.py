@@ -213,7 +213,7 @@ def get_bpe_substitues(substitutes, tokenizer, mlm_model):
     word_list = [all_substitutes[i] for i in word_list]
     final_words = []
     for word in word_list:
-        tokens = [tokenizer._convert_id_to_token(i) for i in word]
+        tokens = [tokenizer._convert_id_to_token(int(i)) for i in word]
         text = tokenizer.convert_tokens_to_string(tokens)
         final_words.append(text)
     return final_words
